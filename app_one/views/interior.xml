@@ -1,0 +1,68 @@
+	<odoo>
+
+	<record id="interior_form"  model="ir.ui.view">
+		<field name="name">interior form</field>
+		<field name="model">interior</field>
+		<field name="arch" type="xml"> 
+			
+	<form>
+		<header>
+		 <button name="action_calc" type="object" class="btn-primary" string="Calculate price"/>		
+		</header>
+			<group>	
+				<field name="interior_name"/> 
+				<field name="Client_name"/> 
+				<field name="Area"/> 
+				<field name="floor"/> 
+			</group>
+	</form>
+	
+
+		 </field>
+		</record>
+	
+	
+	
+	<record id="interior_tree"  model="ir.ui.view">
+		<field name="name">interior tree</field>
+		<field name="model">interior</field>
+		<field name="arch" type="xml"> 
+			
+	<tree>
+
+		
+				<field name="interior_name"/> 
+				<field name="Client_name"/> 
+				<field name="Area"/> 
+				<field name="floor"/> 
+	  
+	</tree>
+		 </field>
+		</record>
+		
+		
+	<record  id="interior_action" model="ir.actions.act_window">
+		<field name="name">interior action</field>
+		<field name="res_model">interior</field>
+			
+	
+	
+	
+	</record>
+	
+	
+	
+	
+	<menuitem
+	id = "interior_menu_item"
+	name = "interiors"
+	parent = "Interior_menu"
+	action = "interior_action"
+	/>
+	
+	
+	
+	
+	
+	
+	</odoo>

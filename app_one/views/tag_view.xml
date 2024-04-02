@@ -1,0 +1,35 @@
+<odoo>
+						
+	<record  id="owner_view_tree" model="ir.ui.view">
+		<field name="name">tag tree</field>
+		<field name="model">tag</field>
+		<field name="arch" type="xml"> 
+			<tree multi_edit="1">
+				
+				 
+			 
+			<field name="name" required="1"/> 
+			</tree>
+		 </field>
+		</record>
+		
+	
+	<record  id="tag_action" model="ir.actions.act_window">
+		<field name="name">tag action</field>
+		<field name="res_model">tag</field>
+
+	</record>
+	
+	
+	
+	
+	
+	<menuitem
+	id = "tag_menu_item"
+	name = "tags"
+	parent = "config_menu"
+	action = "tag_action"
+	/>
+
+	
+</odoo>

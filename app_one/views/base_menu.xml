@@ -1,0 +1,28 @@
+<odoo>
+	
+	<menuitem
+	id = "real_estate_root_menu"
+	name = "real estate"/>
+
+<menuitem
+	id = "properties_menu"
+	name = "properties"
+	parent = "real_estate_root_menu"
+	
+	/>
+	
+	<menuitem
+	id = "config_menu"
+	name = "configuration"
+	parent = "real_estate_root_menu"
+	
+	/>
+	
+	<menuitem
+	id = "Interior_menu"
+	name = "Interior"
+	parent = "real_estate_root_menu"
+	
+	/>
+	
+</odoo>
